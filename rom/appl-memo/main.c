@@ -7,6 +7,7 @@
 // ---------------------------------------------------------------------------
 
 #include <PalmTypes.h>
+#include <Core/System/SystemMgr.h>
 
 UInt32 PilotMain(UInt16 cmd, void* cmdPBP, UInt16 launchFlags)
 {

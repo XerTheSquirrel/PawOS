@@ -1,15 +1,9 @@
 // ---------------------------------------------------------------------------
-// PawOS
+// HandOS
 //     Copyright (C) Stephanie Gawroriski <xer@multiphasicapps.net>
 // ---------------------------------------------------------------------------
-// PawOS is under the GNU General Public License v3+, or later.
+// HandOS is under the GNU General Public License v3+, or later.
 // See license.mkd for licensing and copyright information.
 // ---------------------------------------------------------------------------
 
-#include <PalmTypes.h>
-#include <Core/System/SystemMgr.h>
-
-UInt32 PilotMain(UInt16 cmd, void* cmdPBP, UInt16 launchFlags)
-{
-	return 0;
-}
+#include "libretro.h"

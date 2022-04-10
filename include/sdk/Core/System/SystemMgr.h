@@ -30,7 +30,7 @@ extern "C"
 /*--------------------------------------------------------------------------*/
 
 /**
- * 
+ * Represents a single entry in the library table.
  * 
  * @since 2022/04/10
  */
@@ -55,6 +55,40 @@ typedef struct SysLibTblEntryType
  * @since 2022/04/10
  */
 typedef SysLibTblEntryType* SysLibTblEntryPtr;
+
+/**
+ * Palm OS Main entry point.
+ * 
+ * @param cmd The command that is used to launch the program.
+ * @param cmdPBP The command pointer, this is optional and may be @c NULL.
+ * @param launchFlags The flags used to launch the application.
+ * @return Return @c 0 on success, otherwise any other error code. Note that
+ * this may have special meaning depending on the application.
+ * @since 2022/04/10
+ */
+__attribute__((unused))
+UInt32 PilotMain(UInt16 cmd, void* cmdPBP, UInt16 launchFlags);
+
+/**
+ * Entry point for library procedures.
+ * 
+ * @param uRefNum Library reference number.
+ * @param entryP Entry pointer within the library table.
+ * @return Any resultant error.
+ * @since 2022/04/10
+ */
+Err (*SysLibEntryProcPtr)(UInt16 uRefNum, SysLibTblEntryPtr entryP);
+
+/**
+ * Entry point for libraries.
+ * 
+ * @param uRefNum Reference number.
+ * @param entryP Entry pointer within the library table.
+ * @return Any resultant error.
+ * @since 2022/04/10
+ */
+__attribute__((unused))
+Err __Startup__(UInt16 uRefNum, SysLibTblEntryPtr entryP);
 
 /*--------------------------------------------------------------------------*/
 
