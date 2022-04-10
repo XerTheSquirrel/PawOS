@@ -7,19 +7,21 @@
 // ---------------------------------------------------------------------------
 
 /**
- * Palm OS Types.
+ * System Management.
  * 
  * @since 2022/04/10
  */
 
-#ifndef PAWOS_PALMTYPES_H
-#define PAWOS_PALMTYPES_H
+#ifndef PAWOS_SYSTEMMGR_H
+#define PAWOS_SYSTEMMGR_H
+
+#include <PalmTypes.h>
 
 /* Anti-C++. */
 #ifdef __cplusplus
 #ifndef PAWOS_CXX_IS_EXTERNED
 #define PAWOS_CXX_IS_EXTERNED
-#define PAWOS_CXX_PAWOS_PALMTYPES_H
+#define PAWOS_CXX_PAWOS_SYSTEMMGR_H
 extern "C"
 {
 #endif /* #ifdef PAWOS_CXX_IS_EXTERNED */
@@ -28,63 +30,41 @@ extern "C"
 /*--------------------------------------------------------------------------*/
 
 /**
- * Signed 16-bit integer.
+ * 
  * 
  * @since 2022/04/10
  */
-typedef signed short Int16;
+typedef struct SysLibTblEntryType
+{
+	/** Pointer to the dispatch table. */
+	MemPtr* dispatchTblP;
+	
+	/** Pointer to the globals the library uses. */
+	MemPtr globalsP;
+	
+	/** The database ID of the library. */
+	LocalID dbID;
+	
+	/** Handle to the code resource library. */
+	MemPtr codeRscH;
+} SysLibTblEntryType;
 
 /**
- * Unsigned 16-bit integer.
+ * Pointer to a @c SysLibTblEntryType.
  * 
  * @since 2022/04/10
  */
-typedef unsigned short UInt16;
-
-/**
- * Signed 32-bit integer.
- * 
- * @since 2022/04/10
- */
-typedef signed int Int32;
-
-/**
- * Unsigned 32-bit integer.
- * 
- * @since 2022/04/10
- */
-typedef unsigned int UInt32;
-
-/**
- * Memory pointer.
- * 
- * @since 2022/04/10
- */
-typedef void* MemPtr;
-
-/**
- * Error type.
- * 
- * @since 2022/04/10
- */
-typedef UInt16 Err;
-
-/**
- * Local identifier.
- * 
- * @since 2022/04/10
- */
-typedef UInt32 LocalID;
+typedef SysLibTblEntryType* SysLibTblEntryPtr;
 
 /*--------------------------------------------------------------------------*/
 
 /* Anti-C++. */
 #ifdef __cplusplus
-#ifdef PAWOS_CXX_PAWOS_PALMTYPES_H
+#ifdef PAWOS_CXX_PAWOS_SYSTEMMGR_H
 }
-#undef PAWOS_CXX_PAWOS_PALMTYPES_H
+#undef PAWOS_CXX_PAWOS_SYSTEMMGR_H
 #undef PAWOS_CXX_IS_EXTERNED
-#endif /* #ifdef PAWOS_CXX_PAWOS_PALMTYPES_H */
+#endif /* #ifdef PAWOS_CXX_PAWOS_SYSTEMMGR_H */
 #endif /* #ifdef __cplusplus */
 
-#endif /* PAWOS_PALMTYPES_H */
+#endif /* PAWOS_SYSTEMMGR_H */

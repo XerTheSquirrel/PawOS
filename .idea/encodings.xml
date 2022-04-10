@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/rom/appl-lnch/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/appl-memo/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/appl-npad/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/appl-pref/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/libr-MthL/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/libr-ZLib/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/libr-swrp/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/panl-digi/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/panl-dttm/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/panl-frmt/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/panl-modm/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/panl-netw/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/panl-ownr/main.c" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/rom/panl-shct/main.c" charset="ISO-8859-1" />
+  </component>
+</project>
