@@ -1,0 +1,4 @@
+# JetBrains/CLion Files
+.idea/workspace.xml
+cmake-build-debug/
+cmake-build-release/

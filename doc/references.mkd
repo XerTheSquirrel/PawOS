@@ -1,0 +1,8 @@
+# References
+
+References used in the development of this project:
+
+ * [Palm OS Developer Suite](https://palmdb.net/app/palm-os-developer-suite)
+ * [Palm OS SDK](https://palmdb.net/app/palm-os-sdk)
+ * [rePalm Article](http://dmitry.gr/?r=05.Projects&proj=27.%20rePalm)
+   by _Dmitry Grinberg_
